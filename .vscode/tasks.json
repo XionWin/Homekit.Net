@@ -13,7 +13,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Quadcopter/Quadcopter.csproj"
+                "${workspaceFolder}/Homekit/Homekit.csproj"
             ],
             "problemMatcher": "$msCompile"
         },
@@ -22,8 +22,9 @@
             "command": "scp",
             "type": "shell",
             "args": [
-                "${workspaceFolder}/Quadcopter/bin/Debug/net6.0/*",
-                "pi@drone:/home/pi/share/bin"
+                "-r",
+                "${workspaceFolder}/Homekit/bin/Debug/net6.0/*",
+                "pi@192.168.0.200:/home/pi/Documents/Homekit"
             ],
             "dependsOn": [
                 "build",

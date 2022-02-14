@@ -10,7 +10,7 @@
             "request": "launch",
             "preLaunchTask": "Build",
             "program": "/opt/dotnet/dotnet",
-            "args": ["/home/pi/share/bin/Quadcopter.dll"],
+            "args": ["/home/pi/Documents/Homekit/Homekit.dll"],
             // "cwd": "${workspaceRoot}", 
             "console": "internalConsole",
             "stopAtEntry": false,
@@ -19,7 +19,7 @@
 				"pipeProgram": "ssh",
 				"pipeArgs": [
 					"-T",
-                    "pi@cube"
+                    "pi@192.168.0.200"
 				],
 				"debuggerPath": "sudo ~/.vsdbg/vsdbg"
 			}
