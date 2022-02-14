@@ -5,5 +5,6 @@ namespace Tron.Hardware
     public abstract class GPIODevice<T>
     where T :IDictionary<string, IGPIO>
     {
+        public abstract T PINS{ get; }
     }
 }
